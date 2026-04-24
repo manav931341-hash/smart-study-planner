@@ -40,17 +40,11 @@ app = FastAPI(
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=[
-        "http://https://smart-study-planner-4-w1ih.onrender.com:5173",      # Vite dev server
-        "http://https://smart-study-planner-4-w1ih.onrender.com:3000",      # Alternative React port
-        "https://*.vercel.app",       # Vercel deployments
-        "*"                           # Allow all during development
-    ],
+    allow_origins=["*"],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
 )
-
 
 # ------------------------------------------------------------------
 # HEALTH CHECK
