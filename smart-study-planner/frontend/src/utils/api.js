@@ -9,7 +9,7 @@ import axios from 'axios'
 // Base URL for the backend API
 // During development: http://localhost:8000
 // After deployment: replace with your Render/Railway URL
-const BACKEND_URL = 'http://127.0.0.1:8000'
+const BACKEND_URL = 'https://smart-study-planner-4-w1ih.onrender.com'
 
 const api = axios.create({
   baseURL: BACKEND_URL,
