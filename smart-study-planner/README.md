@@ -75,8 +75,8 @@ pip install -r requirements.txt
 uvicorn main:app --reload --port 8000
 ```
 
-✅ Backend runs at: **http://localhost:8000**
-📚 API Docs (Swagger UI): **http://localhost:8000/docs**
+✅ Backend runs at: **http://https://smart-study-planner-4-w1ih.onrender.com:8000**
+📚 API Docs (Swagger UI): **http://https://smart-study-planner-4-w1ih.onrender.com:8000/docs**
 
 ---
 
@@ -95,13 +95,13 @@ npm install
 npm run dev
 ```
 
-✅ Frontend runs at: **http://localhost:5173**
+✅ Frontend runs at: **http://https://smart-study-planner-4-w1ih.onrender.com:5173**
 
 ---
 
 ### Step 3: Use the App
 
-1. Open **http://localhost:5173**
+1. Open **http://https://smart-study-planner-4-w1ih.onrender.com:5173**
 2. Click **"Start Planning"** or go to **/planner**
 3. Click **"Load Sample Data"** to auto-fill 4 subjects
 4. OR manually add subjects using the form

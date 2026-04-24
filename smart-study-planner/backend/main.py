@@ -4,7 +4,7 @@ main.py — FastAPI Backend Entry Point
 This file starts the web server and defines all API endpoints.
 
 To run: uvicorn main:app --reload --port 8000
-Docs:   http://localhost:8000/docs
+Docs:   http://https://smart-study-planner-4-w1ih.onrender.com:8000/docs
 """
 
 from fastapi import FastAPI, HTTPException
@@ -35,14 +35,14 @@ app = FastAPI(
 
 # ------------------------------------------------------------------
 # CORS MIDDLEWARE
-# Allow the React frontend (running on localhost:5173) to call this API
+# Allow the React frontend (running on https://smart-study-planner-4-w1ih.onrender.com:5173) to call this API
 # ------------------------------------------------------------------
 
 app.add_middleware(
     CORSMiddleware,
     allow_origins=[
-        "http://localhost:5173",      # Vite dev server
-        "http://localhost:3000",      # Alternative React port
+        "http://https://smart-study-planner-4-w1ih.onrender.com:5173",      # Vite dev server
+        "http://https://smart-study-planner-4-w1ih.onrender.com:3000",      # Alternative React port
         "https://*.vercel.app",       # Vercel deployments
         "*"                           # Allow all during development
     ],
